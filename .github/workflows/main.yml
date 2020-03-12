@@ -11,5 +11,4 @@ jobs:
         with:
           files: src/
       - uses: actions/checkout@v1
-      - name: Run Jest
-      uses: stefanoeb/jest-action@1.0.2
+      - uses: stefanoeb/jest-action@1.0.2
