@@ -1,5 +1,5 @@
 
-{ "presets": ["@babel/plugin-proposal-class-properties"],
+{ "presets": ["modules:react-native","@babel/plugin-proposal-class-properties"],
   "plugins": [
     [
       "@babel/plugin-proposal-class-properties",
