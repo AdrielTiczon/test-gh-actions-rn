@@ -1,2 +1,2 @@
 
-{ "presets": ["module:react-native"] }
+{ "presets": ["@babel/plugin-proposal-class-properties"] }
