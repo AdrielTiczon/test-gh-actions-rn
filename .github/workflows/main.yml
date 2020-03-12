@@ -1,17 +1,10 @@
-name: Linter
+name: Lint
 
 on: [pull_request]
 
 jobs:
-  lint:
+  eslint:
     runs-on: ubuntu-latest
-
     steps:
-
-      - name: Run ESLint
-        uses: ninosaurus/eslint-check@v5
-        with:
-          eslint-config-path: "../../test-gh-actions-rn/.eslintrc.js"
-          custom-directory: "../../test-gh-actions-rn/"
-          # repo-token: ${{secrets.TEST_REPO_KEY}}
-          repo-token: "c282275b8ab4acb557a285aa52fac7c60a26fa29"
+      - uses: actions/checkout@v1
+      - uses: stefanoeb/eslint-action@1.0.2
