@@ -7,15 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-
-      - name: npm install
-        working-directory: "../../"
-        run: npm i --ignore-scripts
 
       - name: Run ESLint
         uses: ninosaurus/eslint-check@v5
         with:
           eslint-config-path: "./test-gh-actions-rn/.eslintrc.js"
           custom-directory: "./test-gh-actions-rn/"
-          repo-token: "c282275b8ab4acb557a285aa52fac7c60a26fa29"
+          repo-token: ${{secrets.TEST_REPO_KEY}}
+          # repo-token: "c282275b8ab4acb557a285aa52fac7c60a26fa29"
