@@ -1,10 +1,6 @@
-import React from 'react'
-import { View} from 'react-native'
+import React from 'react';
+import {View} from 'react-native';
 
-const AJ = () => (
-    <View>
-      AJAJAHAHAHAHAH
-    </View>
-)
+const AJ = () => <View>AJAJAHAHAHAHAH</View>;
 
-export default AJ
+export default AJ;
