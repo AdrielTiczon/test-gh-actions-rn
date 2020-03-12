@@ -1,3 +1,3 @@
 module.exports = {
-  presets: ['react-native'],
+  presets: ['module:react-native'],
 };
