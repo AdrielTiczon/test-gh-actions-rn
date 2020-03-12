@@ -1,4 +1,4 @@
-name: LINTER
+name: JEST
 
 on: [pull_request]
 
@@ -7,6 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: stefanoeb/eslint-action@1.0.2
-        with:
-          files: src/
+      - uses: stefanoeb/jest-action@1.0.2
