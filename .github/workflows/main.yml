@@ -1,20 +1,12 @@
-name: Node CI environment
+name: LINTER
 
 on: [pull_request]
 
 jobs:
-  lint:
+  eslint:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v1
-
-      - name: npm install
-        working-directory: "../../"
-        run: npm i --ignore-scripts
-
-      - name: Run ESLint
-        uses: ninosaurus/eslint-check@v5
+      - uses: stefanoeb/eslint-action@1.0.2
         with:
-          eslint-config-path: "./test-gh-actions-rn/.eslintrc.js"
-          custom-directory: "./test-gh-actions-rn/"
+          files: src/**
